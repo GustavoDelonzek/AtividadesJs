@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    padding: 15px 0px;
+    font-size: 60px;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+.formularioNumero div{
+    margin: 0 20px;
+}
+
+section{
+    margin-top: 40px;
+}
+
+.form-control {
+    background-color: rgb(107, 104, 104);
+    border-color: #0D6EFD;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: rgb(148, 148, 148);
+    color: white;
+}

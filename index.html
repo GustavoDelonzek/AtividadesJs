@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js"></script>
+</head>
+
+<body class="bg-dark text-white">
+    <header class="container titulo">
+        <h1 class="text-center">Exercicios JavaScript</h1>
+    </header>
+
+    <main>
+        <section class="container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 1</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela o maior número
+                        entre dois números fornecidos pelo usuário.</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                <div>
+                    <label for="primeiroNumero" class="form-label">Primeiro Número:</label>
+                    <input type="text" id="primeiroNumero" class="form-control">
+                </div>
+                <div>
+                    <label for="segundoNumero" class="form-label">Segundo Número:</label>
+                <input type="text" id="segundoNumero" class="form-control">
+                </div>  
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="comparativo()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 2</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                        de acordo com a nota do usuário. Se a nota for menor do que 6, exiba
+                        "Reprovado". Se a nota for maior ou igual a 6 e menor do que 8, exiba
+                        "Aprovado". Se a nota for maior ou igual a 8, exiba "Aprovado com louvor".</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                <div>
+                    <label for="suaNota" class="form-label">Sua nota:</label>
+                    <input type="text" id="suaNota" class="form-control">
+                </div>
+            
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="avaliaNota()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 3</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela a média dos
+                        números de um vetor.</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                
+                <div class="input-group align-items-center">
+                    <label for="" class="form-label p-2">Preencha todo o vetor:</label> 
+                    <input type="text" id="numero0" class="form-control">
+                    <input type="text" id="numero1" class="form-control">
+                    <input type="text" id="numero2" class="form-control">
+                    <input type="text" id="numero3" class="form-control">
+                    <input type="text" id="numero4" class="form-control">
+                </div>   
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="mediaVetor()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 4</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                        de acordo com o valor de uma variável. Se a variável for igual a "a", exiba
+                        "A". Se a variável for igual a "b", exiba "B". Se a variável não for nem "a"
+                        nem "b", exiba "Outra letra".</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                <div>
+                    <label for="suaLetra" class="form-label">Escreva uma letra:</label>
+                    <input type="text" id="suaLetra" class="form-control">
+                </div>
+            
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="verificaLetra()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 5</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela a soma dos
+                        elementos de uma matriz.</p>
+                </div>   
+            </div>
+            <label for="" class="form-label p-2">Preencha todo a matriz:</label> 
+            <div class="d-flex flex-row align-items-center justify-content-center">
+                
+                <div class="input-group align-items-center flex-column justify-content-center">
+                    
+                    <div class="d-flex flex-row">
+                        <input type="text" id="numero00" class="form-control">
+                        <input type="text" id="numero01" class="form-control">
+                        <input type="text" id="numero02" class="form-control">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <input type="text" id="numero10" class="form-control">
+                        <input type="text" id="numero11" class="form-control">
+                        <input type="text" id="numero12" class="form-control">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <input type="text" id="numero20" class="form-control">
+                        <input type="text" id="numero21" class="form-control">
+                        <input type="text" id="numero22" class="form-control">
+                    </div>
+                    
+                </div>   
+                
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="somaMatriz()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 6</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela o fatorial de um
+                        número fornecido pelo usuário.</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                <div>
+                    <label for="fatorial" class="form-label">Escolha um número:</label>
+                    <input type="text" id="fatorial" class="form-control">
+                </div>
+            
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="calculaFatorial()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 7</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela uma mensagem
+                        de acordo com a escolha do usuário em um menu de opções. O menu
+                        deve ter as opções "1. Opção 1", "2. Opção 2" e "3. Opção 3". Se o usuário
+                        escolher a opção 1, exiba "Opção 1 escolhida". Se o usuário escolher a
+                        opção 2, exiba "Opção 2 escolhida". Se o usuário escolher a opção 3,
+                        exiba "Opção 3 escolhida". Se o usuário escolher uma opção inválida,
+                        exiba "Opção inválida".</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                <div class="m-3">
+                    <label for="fatorial" class="form-label">Escolha uma opção:</label>
+                    <button type="button" onclick="escolherOpcao(1)" class="btn btn-primary">Opção 1</button>
+                    <button type="button" onclick="escolherOpcao(2)" class="btn btn-primary">Opção 2</button>
+                    <button type="button" onclick="escolherOpcao(3)" class="btn btn-primary">Opção 3</button>
+                    <button type="button" onclick="escolherOpcao(4)" class="btn btn-primary">Opção inválida '-'</button>
+                </div>
+            
+                
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 8</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela o maior número
+                        de um vetor.</p>
+                </div>   
+            </div>
+            <div class="d-flex flex-row align-items-center formularioNumero">
+                
+                <div class="input-group align-items-center">
+                    <label for="" class="form-label p-2">Preencha todo o vetor:</label> 
+                    <input type="text" id="vetor0" class="form-control">
+                    <input type="text" id="vetor1" class="form-control">
+                    <input type="text" id="vetor2" class="form-control">
+                    <input type="text" id="vetor3" class="form-control">
+                    <input type="text" id="vetor4" class="form-control">
+                </div>   
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="maiorVetor()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+
+        <section class=" container d-flex flex-column justify-content-center align-items-center ">
+            <div class="d-flex flex-column align-items-center">
+                <div>
+                    <h1>Atividade 9</h1>
+                </div>
+                <div>
+                    <p>Escreva um programa em JavaScript que exiba na tela a média dos
+                        elementos de uma matriz.</p>
+                </div>   
+            </div>
+            <label for="" class="form-label p-2">Preencha toda a matriz:</label> 
+            <div class="d-flex flex-row align-items-center justify-content-center">
+                
+                <div class="input-group align-items-center flex-column justify-content-center">
+                    
+                    <div class="d-flex flex-row">
+                        <input type="text" id="matriz00" class="form-control">
+                        <input type="text" id="matriz01" class="form-control">
+                        <input type="text" id="matriz02" class="form-control">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <input type="text" id="matriz10" class="form-control">
+                        <input type="text" id="matriz11" class="form-control">
+                        <input type="text" id="matriz12" class="form-control">
+                    </div>
+                    <div class="d-flex flex-row">
+                        <input type="text" id="matriz20" class="form-control">
+                        <input type="text" id="matriz21" class="form-control">
+                        <input type="text" id="matriz22" class="form-control">
+                    </div>
+                    
+                </div>   
+                
+                
+            </div>
+            <div class="m-3">
+                <button type="button" onclick="mediaMatriz()" class="btn btn-primary">Confirmar</button>
+            </div>
+            
+        </section>
+        
+    </main>
+</body>
+
+</html>
